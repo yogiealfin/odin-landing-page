@@ -85,10 +85,40 @@ a {
   color: #ff9400;
 }
 
+.hero p {
+  margin-bottom: 10px;
+}
+
 .hero button {
-  width: 150px;
-  height: 40px;
-  border: none;
-  border-radius: 10px;
+  width: 200px;
+  height: 45px;
+  padding: 10px;
+  border: solid 2px #ff9400;
+  border-radius: 8px;
+  color: #ff9400;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.hero button:hover {
   background-color: #ff9400;
+  color: #fff;
+}
+
+.menus .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards {
+  flex: 1;
+  margin: 20px 10px;
+}
+
+.cards img {
+  height: 400px;
+  width: 400px;
 }

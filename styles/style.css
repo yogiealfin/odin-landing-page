@@ -56,26 +56,25 @@ a {
 }
 
 .hero {
-  height: 500px;
+  height: 75dvh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/hero.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
   color: #fff;
 }
 
 .hero .container {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100%;
 }
 
 .hero-text {
-  text-align: center;
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 500px;
   gap: 10px;
 }
 
@@ -92,5 +91,4 @@ a {
   border: none;
   border-radius: 10px;
   background-color: #ff9400;
-  align-self: center;
 }

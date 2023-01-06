@@ -7,6 +7,7 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" href="images/logo-color.png" type="image/x-icon" />
+    <script src="script/script.js" defer></script>
   </head>
   <body>
     <nav class="navbar">
@@ -14,7 +15,12 @@
         <div class="logo">
           <a href="#hero"><img src="images/logo-white.png" alt="" /></a>
         </div>
-        <ul class="nav">
+        <a href="#" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <ul class="navbar-link">
           <li><a href="#menus">Menus</a></li>
           <li><a href="#review">Review</a></li>
           <li><a href="#order">Order</a></li>
@@ -103,7 +109,7 @@
         </div>
       </div>
     </section>
-    <section class="order">
+    <section class="order" id="order">
       <div class="container">
         <div class="order-form">
           <div>

@@ -64,14 +64,18 @@ a {
   height: 40px;
 }
 
-.hero {
+.hero,
+.review {
   height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/hero.jpg");
   background-size: cover;
-  background-position: bottom;
   background-repeat: no-repeat;
   color: #fff;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/hero.jpg");
+  background-position: bottom;
 }
 
 .hero .container {
@@ -98,7 +102,7 @@ a {
   margin-bottom: 10px;
 }
 
-.hero button {
+.main-button {
   width: 200px;
   height: 45px;
   padding: 10px;
@@ -112,7 +116,7 @@ a {
   transition: 0.5s;
 }
 
-.hero button:hover {
+.main-button:hover {
   background-color: #ff9400;
   color: #fff;
 }
@@ -176,6 +180,79 @@ a {
   color: #ff9400;
 }
 
+.review {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/review.jpg");
+  background-position: center;
+}
+
+.review .container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.review-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 900px;
+}
+
+.review-header,
+.review-name {
+  text-transform: uppercase;
+  font-family: "Moon Dance", cursive;
+  color: #ff9400;
+  font-weight: bold;
+}
+
+.review-header {
+  font-size: 30px;
+}
+
+.review-portrait {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 100%;
+  /* flex-shrink: 0; */
+}
+
+.order {
+  height: 300px;
+}
+
+.order .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.order-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 200px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  gap: 40px;
+}
+
+footer {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
 @media (max-width: 768px) {
   .hero .container {
     text-align: center;
@@ -197,5 +274,11 @@ a {
   .menus .content {
     flex-direction: column;
     font-size: 90%;
+  }
+
+  .order-form {
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
   }
 }
